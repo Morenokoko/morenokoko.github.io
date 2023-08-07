@@ -10,7 +10,6 @@ import {
   Button,
 } from "@mui/material";
 import useScrollDirection from "../hooks/listen_to_scroll";
-import { Link } from "react-router-dom";
 
 const pages = [
   { page: "Work", link: "/work" },
@@ -82,13 +81,11 @@ function ResponsiveAppBar() {
               setIsNavOpen(false);
             }}
           >
-            <Link to="/">
-              <img
-                src={logo}
-                alt="girl outline"
-                style={{ maxWidth: "40px", objectFit: "contain" }}
-              />
-            </Link>
+            <img
+              src={logo}
+              alt="girl outline"
+              style={{ maxWidth: "40px", objectFit: "contain" }}
+            />
           </IconButton>
           <IconButton
             sx={{ display: { xs: "initial", sm: "none" }, padding: 0 }}
@@ -96,13 +93,11 @@ function ResponsiveAppBar() {
               setIsNavOpen(false);
             }}
           >
-            <Link to="/">
-              <img
-                src={logo}
-                alt="girl outline"
-                style={{ maxWidth: "40px", objectFit: "contain" }}
-              />
-            </Link>
+            <img
+              src={logo}
+              alt="girl outline"
+              style={{ maxWidth: "40px", objectFit: "contain" }}
+            />
           </IconButton>
 
           <Box sx={{ display: { xs: "initial", sm: "none" } }}>
@@ -122,22 +117,20 @@ function ResponsiveAppBar() {
             sx={{ display: { xs: "none", sm: "initial" } }}
           >
             {pages.map((page) => (
-              <Link to={page.link} key={page.page}>
-                <Button
-                  key={page.page}
-                  sx={{
-                    color: "white",
-                    "&:hover": {
-                      color: "#E675E9",
-                    },
-                  }}
-                  onClick={() => {
-                    handleButtonClicked(page);
-                  }}
-                >
-                  {page.page}
-                </Button>
-              </Link>
+              <Button
+                key={page.page}
+                sx={{
+                  color: "white",
+                  "&:hover": {
+                    color: "#E675E9",
+                  },
+                }}
+                onClick={() => {
+                  handleButtonClicked(page);
+                }}
+              >
+                {page.page}
+              </Button>
             ))}
           </Stack>
         </Stack>
@@ -154,19 +147,17 @@ function ResponsiveAppBar() {
           }}
         >
           {pages.map((page) => (
-            <Link to={page.link} key={page.page}>
-              <Box
-                key={page.page}
-                sx={{ backgroundColor: "black", p: 1 }}
-                onClick={() => {
-                  handleButtonClicked(page);
-                }}
-              >
-                <Typography textAlign="center" variant="subtitle1">
-                  {page.page}
-                </Typography>
-              </Box>
-            </Link>
+            <Box
+              key={page.page}
+              sx={{ backgroundColor: "black", p: 1 }}
+              onClick={() => {
+                handleButtonClicked(page);
+              }}
+            >
+              <Typography textAlign="center" variant="subtitle1">
+                {page.page}
+              </Typography>
+            </Box>
           ))}
         </Stack>
       </Stack>
