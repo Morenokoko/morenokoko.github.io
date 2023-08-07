@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a96fcd98.css",
+    "main.js": "/static/js/main.16707f20.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/sample-website.jpg": "/static/media/sample-website.79551b62d5f5cf01b6e6.jpg",
+    "static/media/girl-outline.gif": "/static/media/girl-outline.77e5eb96b55b45b717d7.gif",
+    "static/media/mk-logo.png": "/static/media/mk-logo.e63f246dedc1e870c409.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.a96fcd98.css.map": "/static/css/main.a96fcd98.css.map",
+    "main.16707f20.js.map": "/static/js/main.16707f20.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a96fcd98.css",
+    "static/js/main.16707f20.js"
+  ]
+}
