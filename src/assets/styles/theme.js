@@ -40,6 +40,11 @@ export const theme = createTheme({
         fontStyle: "italic",
         color: "#ffffff",
       },
+      h5: {
+        fontSize: "20px",
+        fontWeight: "600", // Set the font weight to semibold
+        color: "#E675E9",
+      },
       body1: {
         fontSize: "20px",
         color: "#9A9A9A",
@@ -47,6 +52,10 @@ export const theme = createTheme({
       body2: {
         fontSize: "20px",
         color: "#ffffff",
+      },
+      body3: {
+        fontSize: "16px",
+        color: "#9A9A9A",
       },
       subtitle1: {
         fontSize: "16px",
