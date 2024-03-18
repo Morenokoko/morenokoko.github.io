@@ -12,7 +12,7 @@ import {
 import useScrollDirection from "../hooks/listen_to_scroll";
 
 const pages = [
-  { page: "Work", link: "/work" },
+  { page: "Projects", link: "/work" },
   { page: "Contact", link: "/" },
 ];
 
@@ -32,6 +32,13 @@ function ResponsiveAppBar() {
       await new Promise((resolve) => setTimeout(resolve, 300));
       // link to contact section in homepage
       const contactSection = document.getElementById("home-contact");
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }else{
+      await new Promise((resolve) => setTimeout(resolve, 300));
+      // link to projects section in homepage
+      const contactSection = document.getElementById("home-projects");
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }

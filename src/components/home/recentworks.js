@@ -84,7 +84,7 @@ const HomeRecentWorks = () => {
   };
 
   return (
-    <Stack spacing={{ xs: 3 }} alignItems="stretch">
+    <Stack id="home-projects" spacing={{ xs: 3 }} alignItems="stretch" sx={{pt:10}}>
       <Typography variant="h2">Recent Works</Typography>
       <MoreInfoDialog
         open={open}
