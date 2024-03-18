@@ -1,6 +1,7 @@
 export const dataList = [
   {
-    title: "Data Structure Algorithms - Bus Routing App",
+    module: "Data Structure Algorithms",
+    title: "Bus Routing App",
     features: [
       "Calculate nearest bus stop based on user’s location",
       "Dijkstra to find shortest path user can take to travel",
@@ -15,9 +16,11 @@ export const dataList = [
       "Mapbox API (Returns coordinate along the routes)",
       "Geopy.Geocoder API (Translate locations in to latitude and longitude)",
     ],
+    imageLink: "dsa.jpg",
   },
   {
-    title: "Object Oriented Programming - ATM CLI App",
+    module: "Object Oriented Programming",
+    title: "ATM CLI App",
     features: [
       "Application of Object-Oriented Programming (OOP) principles in designing and implementing an ATM CLI application",
       "Integration of fundamental features including account information, balance check, authentication, money transfer, and settings",
@@ -32,9 +35,11 @@ export const dataList = [
       "Socket call",
       "File I/O",
     ],
+    imageLink: "oop.jpg",
   },
   {
-    title: "Computer Network - Smart Nursery Room App",
+    module: "Computer Network",
+    title: "Smart Nursery Room App",
     features: [
       "Implementation of smart camera for remote monitoring",
       "Integration of smart thermostat and fan for temperature control",
@@ -50,9 +55,11 @@ export const dataList = [
       "Flask GUI",
       "Scapy Library",
     ],
+    imageLink: "cn.jpg",
   },
   {
-    title: "Programming Methodology - Tic-Tac-Toe",
+    module: "Programming Methodology",
+    title: "Tic-Tac-Toe",
     features: [
       "User-friendly GUI that displays player 1, player 2 and the winner using a Graphical User Interface, GTK 3",
       "Two-player mode, each player take turns. The first person to mark three of their signs in a horizontal, vertical, or diagonal row is the winner",
@@ -66,9 +73,11 @@ export const dataList = [
       "GTK 3 GUI",
       "MinMax Algorithm",
     ],
+    imageLink: "pm.jpg",
   },
   {
-    title: "Computer Organisation and Architecture - Raspberry Pi Programming: C and Assembly for GPIO Control",
+    module: "Computer Organisation and Architecture",
+    title: "Raspberry Pi Programming: C and Assembly for GPIO Control",
     features: [
       "Application of computer organization and architecture concepts through hands-on C and assembly language programming exercises on the Raspberry Pi platform with ARM processor",
       "Implementation of C programming codes to control GPIO pins on the Raspberry Pi for functionalities such as turning on/off, and blinking LED lights based on user input",
@@ -83,9 +92,31 @@ export const dataList = [
       "GPIO Pins",
       "PWM (Pulse Width Modulation)",
     ],
+    imageLink: "coa.jpg",
   },
   {
-    title: "Web Programming - Form Builder Library",
+    module: "Operating Systems",
+    title: "Raspberry Pi: Scheduling & Linux Kernel Communication",
+    features: [
+      "Development of loadable Linux kernel module and user space app for communication on Raspberry Pi",
+      "Integration for data exchange, user input handling, and result comparison using hashing functions: SHA-512, SHA-384, SHA-256, SHA-1, or MD",
+      "Implementation of five scheduling algorithms (FCFS, SJF, SRTF, RR, Priority) in C language",
+      "Generation and execution of process tables with random arrival time, burst time, and priority based on user selection",
+      "Visualization of Gantt charts and comparison of turnaround time, waiting time, and response time to determine optimal scheduling algorithm"
+    ],
+    languageUsed: [
+      "C"
+    ],
+    techUsed: [
+      "Raspberry Pi",
+      "Linux Kernel Module",
+      "Bash Shell Scripting"
+    ],
+    imageLink: "os.jpg",
+  },
+  {
+    module: "Web Programming",
+    title: "Form Builder Library",
     features: [
       "Implementation of CRUD operations in PHP utilizing the CodeIgniter framework for efficient management of form data",
       "Integration of CodeIgniter Shield for enhanced security measures, ensuring secure data handling and protection against malicious attacks",
@@ -103,28 +134,11 @@ export const dataList = [
       "jQuery",
       "jQuery UI"
     ],
-    
+    imageLink: "web.jpg",
   },
   {
-    title: "Operating Systems - Raspberry Pi: Scheduling & Linux Kernel Communication",
-    features: [
-      "Development of loadable Linux kernel module and user space app for communication on Raspberry Pi",
-      "Integration for data exchange, user input handling, and result comparison using hashing functions: SHA-512, SHA-384, SHA-256, SHA-1, or MD",
-      "Implementation of five scheduling algorithms (FCFS, SJF, SRTF, RR, Priority) in C language",
-      "Generation and execution of process tables with random arrival time, burst time, and priority based on user selection",
-      "Visualization of Gantt charts and comparison of turnaround time, waiting time, and response time to determine optimal scheduling algorithm"
-    ],
-    languageUsed: [
-      "C"
-    ],
-    techUsed: [
-      "Raspberry Pi",
-      "Linux Kernel Module",
-      "Bash Shell Scripting"
-    ],
-  },
-  {
-    title: "Database Systems - Airbnb App",
+    module: "Database Systems",
+    title: "Airbnb App",
     features: [
       "Development of an Airbnb booking webpage with MySQL and MongoDB backend integration",
       "Intuitive design and advanced search functionalities",
@@ -141,6 +155,7 @@ export const dataList = [
       "MySQL",
       "Kaggle (dataset)"
     ],
+    imageLink: "db.jpg",
   },
   // {
   //   title: "Cloud and Distributed Computing - ",

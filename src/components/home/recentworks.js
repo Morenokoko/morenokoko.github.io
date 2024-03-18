@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Typography, Stack } from "@mui/material";
-import image from "../../assets/images/sample-website.jpg";
+import { Typography, Stack, Box } from "@mui/material";
+// import image from "../../assets/images/sample-website.jpg";
 import MoreInfoDialog from "./moreinfodialog";
 import { dataList } from "../../assets/data";
 
@@ -84,27 +84,85 @@ const HomeRecentWorks = () => {
   };
 
   return (
-    <Stack id="home-projects" spacing={{ xs: 3 }} alignItems="stretch" sx={{pt:10}}>
+    <Stack
+      id="home-projects"
+      spacing={{ xs: 3 }}
+      alignItems="stretch"
+      sx={{ pt: 10 }}
+    >
       <Typography variant="h2">Recent Works</Typography>
       <MoreInfoDialog
         open={open}
         handleClose={handleClose}
         data={selectedWork}
       />
-      {dataList && dataList.length > 0 && (
-        <Slider {...settings} ref={sliderRef}>
-          {dataList.map((data, index) => (
-            <img
-              key={index}
-              id={index}
-              src={image}
-              alt="project"
-              className="custom-slider-image"
-              onClick={() => handleClickOpen(data)}
-            />
-          ))}
-        </Slider>
-      )}
+      <Box sx={{ px: 3 }}>
+        {dataList && dataList.length > 0 && (
+          <Slider {...settings} ref={sliderRef}>
+            {dataList.map((data, index) => (
+              <Stack
+                key={data.title}
+                sx={{
+                  position: "relative",
+                  display: "inline-block", // Ensure Stack only takes up the space of its content
+                  width: "fit-content", // Adjust width to fit the content (image)
+                  height: "fit-content", // Adjust height to fit the content (image)
+                  borderRadius: "10px", // Apply border-radius to Stack instead of the image
+                  overflow: "hidden", // Hide any overflowing content
+                  cursor: "pointer",
+                }}
+                onClick={() => handleClickOpen(data)}
+              >
+                <img
+                  key={index}
+                  id={index}
+                  src={require(`../../assets/images/${data.imageLink}`)}
+                  alt="project"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+                <Stack
+                  sx={{
+                    padding: "10px",
+                    backgroundColor: "white",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      fontSize: {
+                        xs: "14px",
+                        sm: "14px",
+                        md: "14px",
+                        lg: "18px",
+                        xl: "18px",
+                      },
+                    }}
+                  >
+                    {data.title}
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: {
+                        xs: "12px",
+                        sm: "12px",
+                        md: "12px",
+                        lg: "16px",
+                        xl: "16px",
+                      },
+                    }}
+                  >
+                    {data.module}
+                  </Typography>
+                </Stack>
+              </Stack>
+            ))}
+          </Slider>
+        )}
+      </Box>
     </Stack>
   );
 };

@@ -122,6 +122,7 @@ function ResponsiveAppBar() {
           <Stack
             direction="row"
             sx={{ display: { xs: "none", sm: "initial" } }}
+            spacing={2}
           >
             {pages.map((page) => (
               <Button
@@ -131,6 +132,7 @@ function ResponsiveAppBar() {
                   "&:hover": {
                     color: "#E675E9",
                   },
+                  paddingRight:"0"
                 }}
                 onClick={() => {
                   handleButtonClicked(page);
